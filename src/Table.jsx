@@ -89,50 +89,7 @@ const data = [
         originalAdmin: "User Charlie",
         districtAdmin: "Charlie Admin",
         provider: "Provider 2",
-        users: [
-            {
-                name: "User5 f_name",
-                role: "userone@gmail.com",
-                phone: "(555)-555-5555",
-
-            },
-            {
-                name: "User6 f_name",
-                role: "usertwo@gmail.com",
-                phone: "(222)-222-2222",
-            },
-            {
-                name: "User7 f_name",
-                role: "userthree@gmail.com",
-                phone: "(333)-333-3333",
-            },
-            {
-                name: "User8 f_name",
-                role: "userfour@gmail.com",
-                phone: "(444)-444-4444",
-            },
-            {
-                name: "User9 f_name",
-                role: "userone@gmail.com",
-                phone: "(555)-555-5555",
-
-            },
-            {
-                name: "User10 f_name",
-                role: "usertwo@gmail.com",
-                phone: "(222)-222-2222",
-            },
-            {
-                name: "User11 f_name",
-                role: "userthree@gmail.com",
-                phone: "(333)-333-3333",
-            },
-            {
-                name: "User8 f_name",
-                role: "userfour@gmail.com",
-                phone: "(444)-444-4444",
-            },
-        ]
+        users: []
     },
     {
         district: "D",
@@ -259,10 +216,17 @@ export default function Table() {
                                 </td>
                                 <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">{district.originalAdmin}</td>
                                 <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">{district.districtAdmin}</td>
-                                <td className="px-3 py-4 text-sm text-gray-500"><button className="text-blue-500"
-                                    onClick={(e) => { handleSelect(e, district.users) }}
+                                <td className="px-3 py-4 text-sm text-gray-500">
+                                    
+                                    {district.users.length > 0 ? (
+                                        <button className="text-blue-500"
+                                        onClick={(e) => { handleSelect(e, district.users) }}
+                                    >View Users</button>
 
-                                >View Users</button></td>
+                                    ) : <div>No Current Users</div>}
+                                    
+                                
+                                </td>
                                 <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                     <button href="#" className="text-sky-600 hover:text-sky-900" onClick={() => {setEdit(true)}}>
                                         Edit<span className="sr-only">, {district.name}</span>
