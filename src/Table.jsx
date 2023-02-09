@@ -114,43 +114,51 @@ const data = [
                 name: "User5 f_name",
                 role: "userone@gmail.com",
                 phone: "(555)-555-5555",
+                link: "/user"
 
             },
             {
                 name: "User6 f_name",
                 role: "usertwo@gmail.com",
                 phone: "(222)-222-2222",
+                link: "/user"
             },
             {
                 name: "User7 f_name",
                 role: "userthree@gmail.com",
                 phone: "(333)-333-3333",
+                link: "/user"
             },
             {
                 name: "User8 f_name",
                 role: "userfour@gmail.com",
                 phone: "(444)-444-4444",
+                link: "/user"
             },
             {
                 name: "User9 f_name",
                 role: "userone@gmail.com",
                 phone: "(555)-555-5555",
+                link: "/user"
 
             },
             {
                 name: "User10 f_name",
                 role: "usertwo@gmail.com",
                 phone: "(222)-222-2222",
+                link: "/user"
             },
             {
                 name: "User11 f_name",
                 role: "userthree@gmail.com",
                 phone: "(333)-333-3333",
+                link: "/user"
             },
             {
                 name: "User8 f_name",
                 role: "userfour@gmail.com",
                 phone: "(444)-444-4444",
+                link: "/user"
             },
         ]
     }
