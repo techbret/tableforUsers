@@ -289,7 +289,7 @@ export default function Table() {
                                                                 <div className='grid grid-cols-3 gap-4'>
                                                                     <Link to={user.link} className='col-span-1 text-blue-500'><div>{user.name}</div></Link>
                                                                     <div>{user.role}</div>
-                                                                    <div>{user.phone}</div>
+                                                                    <div className='sm:block hidden'>{user.phone}</div>
 
                                                                 </div>
 
