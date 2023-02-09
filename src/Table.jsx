@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,22 +16,26 @@ const data = [
                 name: "User1 f_name",
                 role: "userone@gmail.com",
                 phone: "(555)-555-5555",
+                link: "/user"
 
             },
             {
                 name: "User2 f_name",
                 role: "usertwo@gmail.com",
                 phone: "(222)-222-2222",
+                link: "/user"
             },
             {
                 name: "User3 f_name",
                 role: "userthree@gmail.com",
                 phone: "(333)-333-3333",
+                link: "/user"
             },
             {
                 name: "User4 f_name",
                 role: "userfour@gmail.com",
                 phone: "(444)-444-4444",
+                link: "/user"
             },
         ]
     },
@@ -44,43 +49,51 @@ const data = [
                 name: "User5 f_name",
                 role: "userone@gmail.com",
                 phone: "(555)-555-5555",
+                link: "/user"
 
             },
             {
                 name: "User6 f_name",
                 role: "usertwo@gmail.com",
                 phone: "(222)-222-2222",
+                link: "/user"
             },
             {
                 name: "User7 f_name",
                 role: "userthree@gmail.com",
                 phone: "(333)-333-3333",
+                link: "/user"
             },
             {
                 name: "User8 f_name",
                 role: "userfour@gmail.com",
                 phone: "(444)-444-4444",
+                link: "/user"
             },
             {
                 name: "User9 f_name",
                 role: "userone@gmail.com",
                 phone: "(555)-555-5555",
+                link: "/user"
 
             },
             {
                 name: "User10 f_name",
                 role: "usertwo@gmail.com",
                 phone: "(222)-222-2222",
+                link: "/user"
             },
             {
                 name: "User11 f_name",
                 role: "userthree@gmail.com",
                 phone: "(333)-333-3333",
+                link: "/user/"
             },
             {
                 name: "User8 f_name",
                 role: "userfour@gmail.com",
                 phone: "(444)-444-4444",
+                link: "/user"
             },
         ]
     },
@@ -274,7 +287,7 @@ export default function Table() {
                                                         {selectedUsers.map((user, index) => (
                                                             <div key={index}>
                                                                 <div className='grid grid-cols-3 gap-4'>
-                                                                    <button className='col-span-1 text-blue-500'><div>{user.name}</div></button>
+                                                                    <Link to={user.link} className='col-span-1 text-blue-500'><div>{user.name}</div></Link>
                                                                     <div>{user.role}</div>
                                                                     <div>{user.phone}</div>
 
